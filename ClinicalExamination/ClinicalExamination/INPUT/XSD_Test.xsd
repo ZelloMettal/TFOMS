@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="Windows-1251"?>
+<xs:schema id="ZL_LIST" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ZL_LIST" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:all minOccurs="1" maxOccurs="1">
+        <xs:element name="ZGLV">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VERSION" type="xs:string" minOccurs="1" />
+              <xs:element name="DATE" type="xs:date" minOccurs="1" />
+              <xs:element name="FILENAME" type="xs:string" minOccurs="1" />
+              <xs:element name="YEAR" type="xs:int" minOccurs="1" />
+              <xs:element name="CODE_MO" type="xs:string" minOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EVENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DISP" type="xs:string" minOccurs="1" />
+              <xs:element name="KOL_M" type="xs:int" minOccurs="1" />
+              <xs:element name="KOL_W" type="xs:int" minOccurs="1" />
+              <xs:element name="PERS" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="N_ZAP" type="xs:int" minOccurs="1" />
+                    <xs:element name="ID_PAC" type="xs:string" minOccurs="1" />
+                    <xs:element name="W" type="xs:int" minOccurs="1" />
+                    <xs:element name="DR" type="xs:string" minOccurs="1" />
+                    <xs:element name="SMO" type="xs:string" minOccurs="1" />
+                    <xs:element name="VPOLIS" type="xs:int" minOccurs="1" />
+		    <xs:element name="SPOLIS" type="xs:string" minOccurs="0" />
+                    <xs:element name="NPOLIS" type="xs:string" minOccurs="1" />
+                    <xs:element name="QUARTER" type="xs:int" minOccurs="0" />
+		    <xs:element name="MONTH" type="xs:int" minOccurs="0" />
+                    <xs:element name="LPU1" type="xs:string" minOccurs="1" />
+                    <xs:element name="DEPTH" type="xs:string" minOccurs="1" />
+                    <xs:element name="SS_DOC" type="xs:string" minOccurs="1" />
+		    <xs:element name="SS_DOC_D" type="xs:string" minOccurs="0" />
+                    <xs:element name="PRVS_D" type="xs:int" minOccurs="0" />
+		    <xs:element name="DS_D" type="xs:string" minOccurs="0" />
+		    <xs:element name="PLACE_D" type="xs:int" minOccurs="0" />
+		    <xs:element name="ID_TFOMS" type="xs:string" minOccurs="0" />
+		    <xs:element name="COMMENT" type="xs:string" minOccurs="0" />
+                    <xs:element name="ID_EVENT" type="xs:int" minOccurs="0" />
+                    <xs:element name="CONTACTS" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PERS_ID" type="xs:int" minOccurs="0" />
+                          <xs:element name="PHONE_F" type="xs:string" minOccurs="0" />
+			  <xs:element name="PHONE_M" type="xs:string" minOccurs="0" />
+                          <xs:element name="EMAIL" type="xs:string" minOccurs="0" />
+                          <xs:element name="ADDRESS" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
